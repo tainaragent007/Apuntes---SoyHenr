@@ -28,6 +28,26 @@ delete autos.marcas;
 
 var misFunciones = {
     saludar: function() {
-        console.log("Hola")}}
+        console.log("Hola")
+    }
+}
 
-console.log(misFunciones);
+misFunciones.saludar(); 
+
+
+var atuendos = { manos: ['Guantes', 'Anillos'], pies: ['Zapatos', 'Soquetes'] }; 
+console.log(atuendos.manos); 
+
+atuendos["piernas"] = ["Bermundas", "Pantalones"];
+console.log(atuendos); 
+
+
+
+var comidas = {};
+var diferenciaDeNotaciones = function (propUno, propDos) {
+    comidas[propUno] = ['Frutas', 'Vegetales']; 
+    comidas[propDos] = ['Hamburguesa', 'Papas Fritas'];
+};
+diferenciaDeNotaciones('saludable', 'noSaludable');
+
+console.log(comidas);
